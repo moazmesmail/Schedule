@@ -1,9 +1,9 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import JsonViewer from "./jsonviewer";
 import { Context } from "../../contexts/Context/Context";
 
-export default function JsonUploader() {
-    const {data ,setData } = useContext(Context)
+export default function JsonUploader({ onSuccess }) {
+    const { setData } = useContext(Context);
 
     const handleFileUpload = (event) => {
         const file = event.target.files[0];
@@ -13,7 +13,8 @@ export default function JsonUploader() {
         reader.onload = (e) => {
             try {
                 const jsonData = JSON.parse(e.target.result);
-                setData(jsonData)
+                setData(jsonData);
+                onSuccess && onSuccess();
             } catch (err) {
                 alert("Invalid JSON file!"), err;
             }
@@ -23,16 +24,12 @@ export default function JsonUploader() {
 
     return (
         <div className="p-4">
-            <h2>{JSON.stringify(data)}</h2>
             <input
                 type="file"
                 accept=".json"
                 onChange={handleFileUpload}
                 className="mb-4"
             />
-            <h2>{JSON.stringify(data)}</h2>
-
-            {data && <JsonViewer  />}
         </div>
     );
 }
