@@ -33,6 +33,20 @@ export default function Teacher() {
     ensureDataConsistency();
 
     const absentDays = new Set(teacher.days || []);
+    const allPlaces = teacher.places || [];
+    // --- Toggle place ---
+    const togglePlace = (placeCode) => {
+        const updatedData = [...data];
+        const t = { ...updatedData[teacherIndex] };
+        const placeSet = new Set(t.places || []);
+
+        if (placeSet.has(placeCode)) placeSet.delete(placeCode);
+        else placeSet.add(placeCode);
+
+        t.places = Array.from(placeSet).sort();
+        updatedData[teacherIndex] = t;
+        setData(updatedData);
+    };
 
     // --- Toggle absent day ---
     const toggleDay = (dayNumber) => {
@@ -115,6 +129,30 @@ export default function Teacher() {
                             }}
                         >
                             {day}
+                        </div>
+                    );
+                })}
+            </div>
+
+            {/* Places Toggle */}
+            <h4 className="mb-3">Preferred Places</h4>
+            <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                {allPlaces.map((place) => {
+                    const hasPlace = (teacher.places || []).includes(place);
+                    return (
+                        <div
+                            key={place}
+                            onClick={() => togglePlace(place)}
+                            className={`p-3 rounded text-white fw-bold ${
+                                hasPlace ? "bg-success" : "bg-secondary"
+                            }`}
+                            style={{
+                                width: "100px",
+                                cursor: "pointer",
+                                userSelect: "none",
+                            }}
+                        >
+                            {place}
                         </div>
                     );
                 })}
