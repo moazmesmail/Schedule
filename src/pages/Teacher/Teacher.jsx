@@ -1,30 +1,32 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "../../contexts/Context/Context";
 
 export default function Teacher() {
     const { id } = useParams();
+    const teacherIndex = Number(id);
     const { data, setData } = useContext(Context);
+    const navigate = useNavigate();
 
     const days = ["Sun", "Mon", "Tus", "Wed", "Thr"];
     const totalSlots = 8;
 
     if (!data || !data.length) return <p>No data loaded yet.</p>;
 
-    const teacher = data[id];
+    const teacher = data[teacherIndex];
     if (!teacher) return <p>Teacher not found.</p>;
 
     // --- Ensure freeslots array always has 5 days ---
     const ensureDataConsistency = () => {
         const updatedData = [...data];
-        const t = { ...updatedData[id] };
+        const t = { ...updatedData[teacherIndex] };
 
         if (!Array.isArray(t.freeslots) || t.freeslots.length < 5) {
             t.freeslots = Array.from(
                 { length: 5 },
                 (_, i) => t.freeslots?.[i] || []
             );
-            updatedData[id] = t;
+            updatedData[teacherIndex] = t;
             setData(updatedData);
         }
     };
@@ -35,24 +37,23 @@ export default function Teacher() {
     // --- Toggle absent day ---
     const toggleDay = (dayNumber) => {
         const updatedData = [...data];
-        const t = { ...updatedData[id] };
+        const t = { ...updatedData[teacherIndex] };
         const daysSet = new Set(t.days || []);
 
         if (daysSet.has(dayNumber)) daysSet.delete(dayNumber);
         else daysSet.add(dayNumber);
 
         t.days = Array.from(daysSet).sort((a, b) => a - b);
-        updatedData[id] = t;
+        updatedData[teacherIndex] = t;
         setData(updatedData);
     };
 
     // --- Toggle free slot ---
     const toggleSlot = (dayIndex, slotNum) => {
         const updatedData = [...data];
-        const t = { ...updatedData[id] };
+        const t = { ...updatedData[teacherIndex] };
         const freeslots = [...(t.freeslots || [])];
 
-        // Ensure correct structure
         if (!Array.isArray(freeslots[dayIndex])) freeslots[dayIndex] = [];
 
         const slotSet = new Set(freeslots[dayIndex]);
@@ -62,13 +63,38 @@ export default function Teacher() {
         freeslots[dayIndex] = Array.from(slotSet).sort((a, b) => a - b);
         t.freeslots = freeslots;
 
-        updatedData[id] = t;
+        updatedData[teacherIndex] = t;
         setData(updatedData);
+    };
+
+    // --- Navigation Handlers ---
+    const nextTeacher = () => {
+        const nextIndex = (teacherIndex + 1) % data.length;
+        navigate(`/teacher/${nextIndex}`);
+    };
+
+    const prevTeacher = () => {
+        const prevIndex = (teacherIndex - 1 + data.length) % data.length;
+        navigate(`/teacher/${prevIndex}`);
     };
 
     return (
         <div className="container mt-4 text-center">
-            <h1 className="mb-4">{teacher.teacher}</h1>
+            <div className="d-flex justify-content-between align-items-center mb-4">
+                <button
+                    onClick={prevTeacher}
+                    className="btn btn-outline-primary"
+                >
+                    ⬅ Prev
+                </button>
+                <h1 className="mb-0">{teacher.teacher}</h1>
+                <button
+                    onClick={nextTeacher}
+                    className="btn btn-outline-primary"
+                >
+                    Next ➡
+                </button>
+            </div>
 
             {/* Absent Day Toggle */}
             <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
@@ -125,7 +151,6 @@ export default function Teacher() {
                                     >
                                         {day}
                                     </td>
-
                                     {Array.from(
                                         { length: totalSlots },
                                         (_, slotIndex) => {
