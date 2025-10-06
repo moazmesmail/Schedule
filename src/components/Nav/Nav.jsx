@@ -52,6 +52,15 @@ export default function Nav() {
                                     Schedule
                                 </Link>
                             </li>
+                            <li className="nav-item">
+                                <Link
+                                    className="nav-link active"
+                                    aria-current="page"
+                                    to="/slots"
+                                >
+                                    Slots
+                                </Link>
+                            </li>
                         </ul>
                         {/* <form className="d-flex" role="search">
                             <input
