@@ -48,6 +48,16 @@ export default function Teacher() {
         setData(updatedData);
     };
 
+    const togglePlaces = (places) => {
+        const updatedData = [...data];
+        const t = { ...updatedData[teacherIndex] };
+
+        // if places 
+
+        t.places = places;
+        updatedData[teacherIndex] = t;
+        setData(updatedData);
+    };
     // --- Toggle absent day ---
     const toggleDay = (dayNumber) => {
         const updatedData = [...data];
@@ -136,8 +146,43 @@ export default function Teacher() {
 
             {/* Places Toggle */}
             <h4 className="mb-3">Preferred Places</h4>
+
+            <div className="d-flex justify-content-center gap-3 flex-wrap mb-3">
+                {/* Building A Button */}
+                <div
+                    key="A"
+                    onClick={() => {
+                        togglePlaces([1,2,3]);
+                    }}
+                    className="p-3 rounded text-white fw-bold bg-primary"
+                    style={{
+                        width: "120px",
+                        cursor: "pointer",
+                        userSelect: "none",
+                    }}
+                >
+                    Building A
+                </div>
+
+                {/* Building B Button */}
+                <div
+                    key="B"
+                    onClick={() => {
+                        togglePlaces([4,5,6,7]);
+
+                    }}
+                    className="p-3 rounded text-white fw-bold bg-primary"
+                    style={{
+                        width: "120px",
+                        cursor: "pointer",
+                        userSelect: "none",
+                    }}
+                >
+                    Building B
+                </div>
+            </div>
             <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
-                {allPlaces.map((place) => {
+                {[1, 2, 3, 4, 5, 6, 7].map((place) => {
                     const hasPlace = (teacher.places || []).includes(place);
                     return (
                         <div
