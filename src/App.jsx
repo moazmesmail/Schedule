@@ -15,11 +15,12 @@ function App() {
     return (
         <>
             <Provider>
-                <Router>
+                <Router basename={import.meta.env.BASE_URL}>
                     <Nav />
                     <div className="container-xl mt-4">
                         <Routes>
                             <Route path="/" element={<Home />} />
+                            <Route path="/home" element={<Home />} />
                             <Route path="/schedule" element={<Schedule />} />
                             <Route path="/slots" element={<Slots />} />
                             <Route path="/teachers" element={<Teachers />} />
