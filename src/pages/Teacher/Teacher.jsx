@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Context } from "../../contexts/Context/Context";
 
 export default function Teacher() {
@@ -7,6 +7,7 @@ export default function Teacher() {
     const teacherIndex = Number(id);
     const { data, setData } = useContext(Context);
     const navigate = useNavigate();
+    const [ displayPlaces ,  setDisplayPlaces] = useState(false)
 
     const days = ["Sun", "Mon", "Tus", "Wed", "Thr"];
     const totalSlots = 8;
@@ -145,63 +146,72 @@ export default function Teacher() {
             </div>
 
             {/* Places Toggle */}
-            <h4 className="mb-3">Preferred Places</h4>
+            <h4
+                className="mb-3"
+                onClick={() => {
+                    console.log(displayPlaces);
+                    setDisplayPlaces(!displayPlaces);
+                }}
+            >
+                Places
+            </h4>
 
-            <div className="d-flex justify-content-center gap-3 flex-wrap mb-3">
-                {/* Building A Button */}
-                <div
-                    key="A"
-                    onClick={() => {
-                        togglePlaces([1,2,3]);
-                    }}
-                    className="p-3 rounded text-white fw-bold bg-primary"
-                    style={{
-                        width: "120px",
-                        cursor: "pointer",
-                        userSelect: "none",
-                    }}
-                >
-                    Building A
+            {displayPlaces && (<div className="">
+                <div className="d-flex justify-content-center gap-3 flex-wrap mb-3">
+                    {/* Building A Button */}
+                    <div
+                        key="A"
+                        onClick={() => {
+                            togglePlaces([1, 2, 3]);
+                        }}
+                        className="p-3 rounded text-white fw-bold bg-primary"
+                        style={{
+                            width: "120px",
+                            cursor: "pointer",
+                            userSelect: "none",
+                        }}
+                    >
+                        Building A
+                    </div>
+
+                    {/* Building B Button */}
+                    <div
+                        key="B"
+                        onClick={() => {
+                            togglePlaces([4, 5, 6, 7]);
+                        }}
+                        className="p-3 rounded text-white fw-bold bg-primary"
+                        style={{
+                            width: "120px",
+                            cursor: "pointer",
+                            userSelect: "none",
+                        }}
+                    >
+                        Building B
+                    </div>
                 </div>
-
-                {/* Building B Button */}
-                <div
-                    key="B"
-                    onClick={() => {
-                        togglePlaces([4,5,6,7]);
-
-                    }}
-                    className="p-3 rounded text-white fw-bold bg-primary"
-                    style={{
-                        width: "120px",
-                        cursor: "pointer",
-                        userSelect: "none",
-                    }}
-                >
-                    Building B
+                <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                    {[1, 2, 3, 4, 5, 6, 7].map((place) => {
+                        const hasPlace = (teacher.places || []).includes(place);
+                        return (
+                            <div
+                                key={place}
+                                onClick={() => togglePlace(place)}
+                                className={`p-3 rounded text-white fw-bold ${
+                                    hasPlace ? "bg-success" : "bg-secondary"
+                                }`}
+                                style={{
+                                    width: "100px",
+                                    cursor: "pointer",
+                                    userSelect: "none",
+                                }}
+                            >
+                                {place}
+                            </div>
+                        );
+                    })}
                 </div>
-            </div>
-            <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
-                {[1, 2, 3, 4, 5, 6, 7].map((place) => {
-                    const hasPlace = (teacher.places || []).includes(place);
-                    return (
-                        <div
-                            key={place}
-                            onClick={() => togglePlace(place)}
-                            className={`p-3 rounded text-white fw-bold ${
-                                hasPlace ? "bg-success" : "bg-secondary"
-                            }`}
-                            style={{
-                                width: "100px",
-                                cursor: "pointer",
-                                userSelect: "none",
-                            }}
-                        >
-                            {place}
-                        </div>
-                    );
-                })}
-            </div>
+            </div>)}
 
             {/* Schedule Slots */}
             <h4 className="mb-3">Weekly Schedule</h4>
