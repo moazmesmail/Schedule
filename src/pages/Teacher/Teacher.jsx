@@ -8,6 +8,7 @@ export default function Teacher() {
     const { data, setData } = useContext(Context);
     const navigate = useNavigate();
     const [ displayPlaces ,  setDisplayPlaces] = useState(false)
+    const [displayDays, setDisplayDays] = useState(false);
 
     const days = ["Sun", "Mon", "Tus", "Wed", "Thr"];
     const totalSlots = 8;
@@ -122,83 +123,25 @@ export default function Teacher() {
             </div>
 
             {/* Absent Day Toggle */}
-            <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
-                {days.map((day, index) => {
-                    const dayNum = index + 1;
-                    const isAbsent = absentDays.has(dayNum);
-                    return (
-                        <div
-                            key={index}
-                            onClick={() => toggleDay(dayNum)}
-                            className={`p-3 rounded text-white fw-bold ${
-                                isAbsent ? "bg-danger" : "bg-secondary"
-                            }`}
-                            style={{
-                                width: "100px",
-                                cursor: "pointer",
-                                userSelect: "none",
-                            }}
-                        >
-                            {day}
-                        </div>
-                    );
-                })}
-            </div>
-
-            {/* Places Toggle */}
             <h4
                 className="mb-3"
                 onClick={() => {
-                    console.log(displayPlaces);
-                    setDisplayPlaces(!displayPlaces);
+                    setDisplayDays(!displayDays);
                 }}
             >
-                Places
+                Days
             </h4>
-
-            {displayPlaces && (<div className="">
-                <div className="d-flex justify-content-center gap-3 flex-wrap mb-3">
-                    {/* Building A Button */}
-                    <div
-                        key="A"
-                        onClick={() => {
-                            togglePlaces([1, 2, 3]);
-                        }}
-                        className="p-3 rounded text-white fw-bold bg-primary"
-                        style={{
-                            width: "120px",
-                            cursor: "pointer",
-                            userSelect: "none",
-                        }}
-                    >
-                        Building A
-                    </div>
-
-                    {/* Building B Button */}
-                    <div
-                        key="B"
-                        onClick={() => {
-                            togglePlaces([4, 5, 6, 7]);
-                        }}
-                        className="p-3 rounded text-white fw-bold bg-primary"
-                        style={{
-                            width: "120px",
-                            cursor: "pointer",
-                            userSelect: "none",
-                        }}
-                    >
-                        Building B
-                    </div>
-                </div>
+            {displayDays && (
                 <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
-                    {[1, 2, 3, 4, 5, 6, 7].map((place) => {
-                        const hasPlace = (teacher.places || []).includes(place);
+                    {days.map((day, index) => {
+                        const dayNum = index + 1;
+                        const isAbsent = absentDays.has(dayNum);
                         return (
                             <div
-                                key={place}
-                                onClick={() => togglePlace(place)}
+                                key={index}
+                                onClick={() => toggleDay(dayNum)}
                                 className={`p-3 rounded text-white fw-bold ${
-                                    hasPlace ? "bg-success" : "bg-secondary"
+                                    isAbsent ? "bg-danger" : "bg-success"
                                 }`}
                                 style={{
                                     width: "100px",
@@ -206,12 +149,83 @@ export default function Teacher() {
                                     userSelect: "none",
                                 }}
                             >
-                                {place}
+                                {day}
                             </div>
                         );
                     })}
                 </div>
-            </div>)}
+            )}
+
+            {/* Places Toggle */}
+            <h4
+                className="mb-3"
+                onClick={() => {
+                    setDisplayPlaces(!displayPlaces);
+                }}
+            >
+                Places
+            </h4>
+
+            {displayPlaces && (
+                <div className="">
+                    <div className="d-flex justify-content-center gap-3 flex-wrap mb-3">
+                        {/* Building A Button */}
+                        <div
+                            key="A"
+                            onClick={() => {
+                                togglePlaces([1, 2, 3]);
+                            }}
+                            className="p-3 rounded text-white fw-bold bg-primary"
+                            style={{
+                                width: "120px",
+                                cursor: "pointer",
+                                userSelect: "none",
+                            }}
+                        >
+                            Building A
+                        </div>
+
+                        {/* Building B Button */}
+                        <div
+                            key="B"
+                            onClick={() => {
+                                togglePlaces([4, 5, 6, 7]);
+                            }}
+                            className="p-3 rounded text-white fw-bold bg-primary"
+                            style={{
+                                width: "120px",
+                                cursor: "pointer",
+                                userSelect: "none",
+                            }}
+                        >
+                            Building B
+                        </div>
+                    </div>
+                    <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                        {[1, 2, 3, 4, 5, 6, 7].map((place) => {
+                            const hasPlace = (teacher.places || []).includes(
+                                place
+                            );
+                            return (
+                                <div
+                                    key={place}
+                                    onClick={() => togglePlace(place)}
+                                    className={`p-3 rounded text-white fw-bold ${
+                                        hasPlace ? "bg-success" : "bg-secondary"
+                                    }`}
+                                    style={{
+                                        width: "100px",
+                                        cursor: "pointer",
+                                        userSelect: "none",
+                                    }}
+                                >
+                                    {place}
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            )}
 
             {/* Schedule Slots */}
             <h4 className="mb-3">Weekly Schedule</h4>
