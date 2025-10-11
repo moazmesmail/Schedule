@@ -1,0 +1,6945 @@
+[
+  {
+    "teacher": "على سراج",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "فاطمه سيد ماث",
+    "days": {
+      "sun": {
+        "free_slots": [
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "احمد فتحى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          3,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "محمد اسماعيل",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          5
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "هبه ماث",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          4,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          4,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "مصطفى ماث",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          3,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          3,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "انجى ماث",
+    "days": {
+      "sun": {
+        "free_slots": [
+          4,
+          6,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          3,
+          5
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "فاطمه سعيد ماث",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          5,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          4,
+          6
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "هيام ماث",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "جهاد ماث",
+    "days": {
+      "sun": {
+        "free_slots": [
+          4,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "امل ماث",
+    "days": {
+      "sun": {
+        "free_slots": [
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "نور الهدى ماث",
+    "days": {
+      "sun": {
+        "free_slots": [
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          4,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "محمود انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          4,
+          5,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          3,
+          4
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "مينا وجدى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          3
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "احمد عبد الرازق",
+    "days": {
+      "sun": {
+        "free_slots": [
+          4
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "اميل انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          5,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ابانوب انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          5
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          4,
+          5
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "احمد شعبان انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          4,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          5,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "شيماء انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          4,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ساره انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          3,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          3,
+          4,
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "اروى انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "سميره انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          3,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "هناء انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ايه انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          4,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "هاله انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "نرمين انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          4,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "نانسى انجليزى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ايه الله ساينس",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          4,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ايه سامى ساينس",
+    "days": {
+      "sun": {
+        "free_slots": [
+          4,
+          5,
+          6
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "شروق علوم",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          3,
+          4,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          3,
+          4,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "منى دراسات",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          4,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "عبير درسات",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          3,
+          4,
+          6
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ايمان دراسات",
+    "days": {
+      "sun": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          4,
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "غاده دراسات",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          6
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          3,
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "مى خالد",
+    "days": {
+      "sun": {
+        "free_slots": [
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "فاطمه صلاح عربى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          3,
+          6,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          3,
+          5,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "عبد الرؤوف عربى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          3,
+          4,
+          5,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ابتهال صلاح الدين",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "عبير حمدى عربى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          5,
+          6,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          3,
+          6
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "على شعبان",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          3,
+          5,
+          6
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          4,
+          6
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "هاله امين عربى",
+    "days": {
+      "sun": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [
+          3,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "س عربى اعدادى وثانوى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          3
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "شيماء حسين حاسب",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          4,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          6
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "مريهان حاسب",
+    "days": {
+      "sun": {
+        "free_slots": [
+          5,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "زينب على",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          4,
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "عادل العاب",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          4,
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ص العاب",
+    "days": {
+      "sun": {
+        "free_slots": [
+          4
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "حنان علم نغس",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          4,
+          6,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "زهره الدسوقى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          3,
+          4,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "احمد السيد",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "محمد صلاح",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          5,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "اسامه فلسفه",
+    "days": {
+      "sun": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "ناديه وطنيه",
+    "days": {
+      "sun": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "نهال جلال",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "منى عبد العزيز",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "حنان سيد",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "طه عربى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ندا ناجح",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "حافظ فتحى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "شعبان عبد المطلب",
+    "days": {
+      "sun": {
+        "free_slots": [
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "مرزوق حسن",
+    "days": {
+      "sun": {
+        "free_slots": [
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          4,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "مروه سد",
+    "days": {
+      "sun": {
+        "free_slots": [
+          4,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ايمن موسى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ياسمين عربى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "نجاه عربى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "اروى عربى كجى",
+    "days": {
+      "sun": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "مى عربى كى جى",
+    "days": {
+      "sun": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "هند عربى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          4,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "س 1 متعدد",
+    "days": {
+      "sun": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "ص1 توكتسو",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          3,
+          4,
+          6
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "دعاء المانى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "داليا المانى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "عبير فرنساوى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ايه متعدد",
+    "days": {
+      "sun": {
+        "free_slots": [
+          2,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "س 1 علوم",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          3,
+          6
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "س 2 علوم",
+    "days": {
+      "sun": {
+        "free_slots": [
+          3,
+          5,
+          6,
+          7
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "ص حاسب",
+    "days": {
+      "sun": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "امال اقتصاد",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          4,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "امل مجال صناعى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          4,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "شيرين مجال",
+    "days": {
+      "sun": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "منال صحافه",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ساره مسرح",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "هبه اقتصاد",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "هند صحافه",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ايه رسم",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "ساره مكتبات",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "هاله مكتبه",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      }
+    }
+  },
+  {
+    "teacher": "كريستينا موسيقى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          4,
+          5,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "mon": {
+        "free_slots": [
+          2,
+          3,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  },
+  {
+    "teacher": "ايمان موسيقى",
+    "days": {
+      "sun": {
+        "free_slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "mon": {
+        "free_slots": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      },
+      "tus": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "wed": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": false
+      },
+      "thr": {
+        "free_slots": [],
+        "places": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "exists": true
+      }
+    }
+  }
+]

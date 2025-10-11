@@ -7,105 +7,123 @@ export default function Teacher() {
     const teacherIndex = Number(id);
     const { data, setData } = useContext(Context);
     const navigate = useNavigate();
-    const [ displayPlaces ,  setDisplayPlaces] = useState(false)
-    const [displayDays, setDisplayDays] = useState(false);
+    const [displayDays, setDisplayDays] = useState(true);
 
-    const days = ["Sun", "Mon", "Tus", "Wed", "Thr"];
+    const days = ["sun", "mon", "tus", "wed", "thr"];
     const totalSlots = 8;
+    const allPlaces = [1, 2, 3, 4, 5, 6, 7];
 
     if (!data || !data.length) return <p>No data loaded yet.</p>;
-
     const teacher = data[teacherIndex];
     if (!teacher) return <p>Teacher not found.</p>;
 
-    // --- Ensure freeslots array always has 5 days ---
-    const ensureDataConsistency = () => {
+    const absentDays = Object.entries(teacher.days || {})
+        .filter(([_, d]) => !d.exists)
+        .map(([dayName]) => dayName);
+
+    // --- Toggle day existence ---
+    const toggleDay = (dayKey) => {
         const updatedData = [...data];
         const t = { ...updatedData[teacherIndex] };
 
-        if (!Array.isArray(t.freeslots) || t.freeslots.length < 5) {
-            t.freeslots = Array.from(
-                { length: 5 },
-                (_, i) => t.freeslots?.[i] || []
-            );
-            updatedData[teacherIndex] = t;
-            setData(updatedData);
+        // Initialize days object if it doesn't exist
+        if (!t.days) {
+            t.days = {};
         }
-    };
-    ensureDataConsistency();
 
-    const absentDays = new Set(teacher.days || []);
-    const allPlaces = teacher.places || [];
+        const dayData = {
+            free_slots: [],
+            places: [],
+            exists: true,
+            ...(t.days[dayKey] || {}),
+        };
+
+        dayData.exists = !dayData.exists;
+
+        t.days = { ...t.days, [dayKey]: dayData };
+        updatedData[teacherIndex] = t;
+        setData(updatedData);
+    };
+
+    // --- Toggle slot ---
+    const toggleSlot = (dayKey, slotNum) => {
+        const updatedData = [...data];
+        const t = { ...updatedData[teacherIndex] };
+
+        // Initialize days object if it doesn't exist
+        if (!t.days) {
+            t.days = {};
+        }
+
+        const dayData = {
+            free_slots: [],
+            places: [],
+            exists: true,
+            ...(t.days[dayKey] || {}),
+        };
+
+        // Ensure free_slots is an array of numbers
+        const slotSet = new Set(
+            (dayData.free_slots || []).map((s) => Number(s))
+        );
+
+        const slotNumber = Number(slotNum);
+        if (slotSet.has(slotNumber)) {
+            slotSet.delete(slotNumber);
+        } else {
+            slotSet.add(slotNumber);
+        }
+
+        dayData.free_slots = Array.from(slotSet).sort((a, b) => a - b);
+
+        t.days = { ...t.days, [dayKey]: dayData };
+        updatedData[teacherIndex] = t;
+        setData(updatedData);
+    };
+
     // --- Toggle place ---
-    const togglePlace = (placeCode) => {
+    const togglePlace = (dayKey, placeCode) => {
         const updatedData = [...data];
         const t = { ...updatedData[teacherIndex] };
-        const placeSet = new Set(t.places || []);
 
-        if (placeSet.has(placeCode)) placeSet.delete(placeCode);
-        else placeSet.add(placeCode);
+        // Initialize days object if it doesn't exist
+        if (!t.days) {
+            t.days = {};
+        }
 
-        t.places = Array.from(placeSet).sort();
+        const dayData = {
+            free_slots: [],
+            places: [],
+            exists: true,
+            ...(t.days[dayKey] || {}),
+        };
+
+        // Ensure places is an array of numbers
+        const placeSet = new Set((dayData.places || []).map((p) => Number(p)));
+
+        const placeNumber = Number(placeCode);
+        if (placeSet.has(placeNumber)) {
+            placeSet.delete(placeNumber);
+        } else {
+            placeSet.add(placeNumber);
+        }
+
+        dayData.places = Array.from(placeSet).sort((a, b) => a - b);
+
+        t.days = { ...t.days, [dayKey]: dayData };
         updatedData[teacherIndex] = t;
         setData(updatedData);
     };
 
-    const togglePlaces = (places) => {
-        const updatedData = [...data];
-        const t = { ...updatedData[teacherIndex] };
-
-        // if places 
-
-        t.places = places;
-        updatedData[teacherIndex] = t;
-        setData(updatedData);
-    };
-    // --- Toggle absent day ---
-    const toggleDay = (dayNumber) => {
-        const updatedData = [...data];
-        const t = { ...updatedData[teacherIndex] };
-        const daysSet = new Set(t.days || []);
-
-        if (daysSet.has(dayNumber)) daysSet.delete(dayNumber);
-        else daysSet.add(dayNumber);
-
-        t.days = Array.from(daysSet).sort((a, b) => a - b);
-        updatedData[teacherIndex] = t;
-        setData(updatedData);
-    };
-
-    // --- Toggle free slot ---
-    const toggleSlot = (dayIndex, slotNum) => {
-        const updatedData = [...data];
-        const t = { ...updatedData[teacherIndex] };
-        const freeslots = [...(t.freeslots || [])];
-
-        if (!Array.isArray(freeslots[dayIndex])) freeslots[dayIndex] = [];
-
-        const slotSet = new Set(freeslots[dayIndex]);
-        if (slotSet.has(slotNum)) slotSet.delete(slotNum);
-        else slotSet.add(slotNum);
-
-        freeslots[dayIndex] = Array.from(slotSet).sort((a, b) => a - b);
-        t.freeslots = freeslots;
-
-        updatedData[teacherIndex] = t;
-        setData(updatedData);
-    };
-
-    // --- Navigation Handlers ---
-    const nextTeacher = () => {
-        const nextIndex = (teacherIndex + 1) % data.length;
-        navigate(`/teacher/${nextIndex}`);
-    };
-
-    const prevTeacher = () => {
-        const prevIndex = (teacherIndex - 1 + data.length) % data.length;
-        navigate(`/teacher/${prevIndex}`);
-    };
+    // --- Navigation ---
+    const nextTeacher = () =>
+        navigate(`/teacher/${(teacherIndex + 1) % data.length}`);
+    const prevTeacher = () =>
+        navigate(`/teacher/${(teacherIndex - 1 + data.length) % data.length}`);
 
     return (
         <div className="container mt-4 text-center">
+            {/* Header */}
             <div className="d-flex justify-content-between align-items-center mb-4">
                 <button
                     onClick={prevTeacher}
@@ -122,24 +140,22 @@ export default function Teacher() {
                 </button>
             </div>
 
-            {/* Absent Day Toggle */}
+            {/* Toggle Days */}
             <h4
                 className="mb-3"
-                onClick={() => {
-                    setDisplayDays(!displayDays);
-                }}
+                style={{ cursor: "pointer" }}
+                onClick={() => setDisplayDays(!displayDays)}
             >
                 Days
             </h4>
             {displayDays && (
                 <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
-                    {days.map((day, index) => {
-                        const dayNum = index + 1;
-                        const isAbsent = absentDays.has(dayNum);
+                    {days.map((day) => {
+                        const isAbsent = absentDays.includes(day);
                         return (
                             <div
-                                key={index}
-                                onClick={() => toggleDay(dayNum)}
+                                key={day}
+                                onClick={() => toggleDay(day)}
                                 className={`p-3 rounded text-white fw-bold ${
                                     isAbsent ? "bg-danger" : "bg-success"
                                 }`}
@@ -147,6 +163,7 @@ export default function Teacher() {
                                     width: "100px",
                                     cursor: "pointer",
                                     userSelect: "none",
+                                    textTransform: "uppercase",
                                 }}
                             >
                                 {day}
@@ -156,149 +173,127 @@ export default function Teacher() {
                 </div>
             )}
 
-            {/* Places Toggle */}
-            <h4
-                className="mb-3"
-                onClick={() => {
-                    setDisplayPlaces(!displayPlaces);
-                }}
-            >
-                Places
-            </h4>
+            {/* Each Day Section — EXCLUDE absent days */}
+            {days.map((dayKey) => {
+                const dayData = teacher.days?.[dayKey] || {
+                    free_slots: [],
+                    places: [],
+                    exists: true,
+                };
+                if (!dayData.exists) return null;
 
-            {displayPlaces && (
-                <div className="">
-                    <div className="d-flex justify-content-center gap-3 flex-wrap mb-3">
-                        {/* Building A Button */}
-                        <div
-                            key="A"
-                            onClick={() => {
-                                togglePlaces([1, 2, 3]);
-                            }}
-                            className="p-3 rounded text-white fw-bold bg-primary"
-                            style={{
-                                width: "120px",
-                                cursor: "pointer",
-                                userSelect: "none",
-                            }}
-                        >
-                            Building A
+                const freeSlots = new Set(
+                    (dayData.free_slots || []).map((s) => Number(s))
+                );
+                const dayPlaces = new Set(
+                    (dayData.places || []).map((p) => Number(p))
+                );
+
+                return (
+                    <div key={dayKey} className="mb-5">
+                        <h4 className="mb-3 text-success">
+                            {dayKey.toUpperCase()}
+                        </h4>
+
+                        {/* Free Slots Table */}
+                        <div className="table-responsive mb-3">
+                            <table className="table table-bordered text-center align-middle">
+                                <thead className="table-secondary">
+                                    <tr>
+                                        {Array.from(
+                                            { length: totalSlots },
+                                            (_, i) => (
+                                                <th key={i}>Slot {i + 1}</th>
+                                            )
+                                        )}
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        {Array.from(
+                                            { length: totalSlots },
+                                            (_, i) => {
+                                                const slotNum = i + 1;
+                                                const isFree =
+                                                    freeSlots.has(slotNum);
+                                                return (
+                                                    <td
+                                                        key={i}
+                                                        onClick={() =>
+                                                            toggleSlot(
+                                                                dayKey,
+                                                                slotNum
+                                                            )
+                                                        }
+                                                        style={{
+                                                            cursor: "pointer",
+                                                            backgroundColor:
+                                                                isFree
+                                                                    ? "green"
+                                                                    : "transparent",
+                                                            color: isFree
+                                                                ? "white"
+                                                                : "black",
+                                                            transition: "0.2s",
+                                                        }}
+                                                    >
+                                                        {isFree ? "Free" : ""}
+                                                    </td>
+                                                );
+                                            }
+                                        )}
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
 
-                        {/* Building B Button */}
-                        <div
-                            key="B"
-                            onClick={() => {
-                                togglePlaces([4, 5, 6, 7]);
-                            }}
-                            className="p-3 rounded text-white fw-bold bg-primary"
-                            style={{
-                                width: "120px",
-                                cursor: "pointer",
-                                userSelect: "none",
-                            }}
-                        >
-                            Building B
-                        </div>
-                    </div>
-                    <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
-                        {[1, 2, 3, 4, 5, 6, 7].map((place) => {
-                            const hasPlace = (teacher.places || []).includes(
-                                place
-                            );
-                            return (
-                                <div
-                                    key={place}
-                                    onClick={() => togglePlace(place)}
-                                    className={`p-3 rounded text-white fw-bold ${
-                                        hasPlace ? "bg-success" : "bg-secondary"
-                                    }`}
-                                    style={{
-                                        width: "100px",
-                                        cursor: "pointer",
-                                        userSelect: "none",
-                                    }}
-                                >
-                                    {place}
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            )}
-
-            {/* Schedule Slots */}
-            <h4 className="mb-3">Weekly Schedule</h4>
-            <div className="table-responsive">
-                <table className="table table-bordered text-center align-middle">
-                    <thead className="table-secondary">
-                        <tr>
-                            <th>Day</th>
-                            {Array.from({ length: totalSlots }, (_, i) => (
-                                <th key={i}>Slot {i + 1}</th>
-                            ))}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {days.map((day, dayIndex) => {
-                            const dayNum = dayIndex + 1;
-                            const isAbsent = absentDays.has(dayNum);
-                            const freeSlots = new Set(
-                                teacher.freeslots?.[dayIndex] || []
-                            );
-
-                            return (
-                                <tr key={dayIndex}>
-                                    <td
-                                        className={
-                                            isAbsent
-                                                ? "bg-danger text-white"
-                                                : ""
-                                        }
-                                    >
-                                        {day}
-                                    </td>
-                                    {Array.from(
-                                        { length: totalSlots },
-                                        (_, slotIndex) => {
-                                            const slotNum = slotIndex + 1;
-                                            const isFree =
-                                                freeSlots.has(slotNum);
-
+                        {/* Places Table */}
+                        <div className="table-responsive">
+                            <table className="table table-bordered text-center align-middle">
+                                <thead className="table-secondary">
+                                    <tr>
+                                        {allPlaces.map((place) => (
+                                            <th key={place}>Place {place}</th>
+                                        ))}
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        {allPlaces.map((place) => {
+                                            const hasPlace =
+                                                dayPlaces.has(place);
                                             return (
                                                 <td
-                                                    key={slotIndex}
+                                                    key={place}
                                                     onClick={() =>
-                                                        !isAbsent &&
-                                                        toggleSlot(
-                                                            dayIndex,
-                                                            slotNum
+                                                        togglePlace(
+                                                            dayKey,
+                                                            place
                                                         )
                                                     }
                                                     style={{
-                                                        cursor: isAbsent
-                                                            ? "not-allowed"
-                                                            : "pointer",
-                                                        backgroundColor: isFree
-                                                            ? "green"
-                                                            : "transparent",
-                                                        color: isFree
+                                                        cursor: "pointer",
+                                                        backgroundColor:
+                                                            hasPlace
+                                                                ? "blue"
+                                                                : "transparent",
+                                                        color: hasPlace
                                                             ? "white"
                                                             : "black",
                                                         transition: "0.2s",
                                                     }}
                                                 >
-                                                    {isFree ? "Free" : ""}
+                                                    {hasPlace ? "✔" : ""}
                                                 </td>
                                             );
-                                        }
-                                    )}
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </table>
-            </div>
+                                        })}
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                );
+            })}
         </div>
     );
 }

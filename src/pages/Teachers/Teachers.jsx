@@ -28,16 +28,22 @@ export default function Teachers() {
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Teacher</th>
-                            <th scope="col">Places</th>
                             <th scope="col">Absent Days</th>
-                            <th scope="col">Actions</th> {/* New column */}
+                            <th scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         {data.map((t, i) => {
-                            const absentDays = t.days.length
-                                ? t.days.map((d) => days[d - 1]).join(", ")
-                                : "—";
+                            const dayEntries = Object.entries(t.days || {});
+                            const absentDays =
+                                dayEntries
+                                    .filter(([_, d]) => !d.exists)
+                                    .map(([dayKey]) => {
+                                        const dayIndex = parseInt(dayKey) - 1;
+                                        return days[dayIndex] || `Day${dayKey}`;
+                                    })
+                                    .join(", ") || "—";
+
                             return (
                                 <tr key={i} className="text-center">
                                     <td>
@@ -53,7 +59,6 @@ export default function Teachers() {
                                             {t.teacher}
                                         </Link>
                                     </td>
-                                    <td>{t.places.join(", ")}</td>
                                     <td>{absentDays}</td>
                                     <td>
                                         <button
