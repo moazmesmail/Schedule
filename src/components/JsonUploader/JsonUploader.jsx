@@ -14,6 +14,7 @@ export default function JsonUploader({ onSuccess }) {
             try {
                 const jsonData = JSON.parse(e.target.result);
                 setData(jsonData);
+                localStorage.setItem("appData", JSON.stringify(jsonData));
                 onSuccess && onSuccess();
             } catch (err) {
                 alert("Invalid JSON file!"), err;
