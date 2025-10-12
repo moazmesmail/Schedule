@@ -1,17 +1,29 @@
 import { useContext, useState } from "react";
 import { Context } from "../../contexts/Context/Context";
+import { Link } from "react-router-dom";
 
 export default function Slots() {
     const { data } = useContext(Context);
-    const [day, setDay] = useState(0);
+    const [day, setDay] = useState("sun");
     const [slot, setSlot] = useState(1);
 
     if (!data || !data.length) return <p>No data available</p>;
 
     // Filter + sort teachers alphabetically
     const freeTeachers = data
-        .filter((teacher) => teacher.freeslots?.[day]?.includes(slot))
-        .sort((a, b) => a.teacher.localeCompare(b.teacher));
+        .filter(
+            (teacher) =>
+                teacher.days?.[day]?.exists &&
+                teacher.days[day].free_slots?.includes(slot)
+        )
+        .sort((a, b) => {
+            const aCount = a.days?.[day]?.free_slots?.length || 0;
+            const bCount = b.days?.[day]?.free_slots?.length || 0;
+
+            // Sort by free count descending, then name ascending
+            if (bCount !== aCount) return bCount - aCount;
+            return a.teacher.localeCompare(b.teacher);
+        });
 
     return (
         <div className="container text-center mt-4">
@@ -21,10 +33,10 @@ export default function Slots() {
                 <select
                     className="form-select w-auto fs-5"
                     value={day}
-                    onChange={(e) => setDay(Number(e.target.value))}
+                    onChange={(e) => setDay(e.target.value)}
                 >
-                    {["Sun", "Mon", "Tue", "Wed", "Thu"].map((d, i) => (
-                        <option key={d} value={i}>
+                    {["sun", "mon", "tue", "wed", "thr"].map((d, i) => (
+                        <option key={d} value={d}>
                             {d}
                         </option>
                     ))}
@@ -42,18 +54,43 @@ export default function Slots() {
                     ))}
                 </select>
             </div>
-
+            <h2>
+                Free Teachers: {freeTeachers.length}
+            </h2>
             {freeTeachers.length ? (
                 <div className="row justify-content-center">
-                    {freeTeachers.map((t ) => (
-                        <div key={t.teacher} className="col-auto mb-3">
-                            <h2 className="fw-bold text-primary display-4">
-                                <span key={t.teacher}>
-                                    {t.teacher}
-                                </span>
-                            </h2>
-                        </div>
-                    ))}
+                    <table className="table table-striped table-bordered table-hover align-middle text-center">
+                        <thead>
+                            <tr>
+                                <th>Teacher</th>
+                                <th>Free Slots Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {freeTeachers.map((t, _) => {
+                                const freeCount =
+                                    t.days?.[day]?.free_slots?.length || 0;
+                                const teacherIndex = data.findIndex(
+                                    (x) => x.teacher === t.teacher
+                                );
+                                return (
+                                    <tr key={teacherIndex}>
+                                        <td className="fw-bold text-primary">
+                                            <Link
+                                                to={`/teacher/${teacherIndex}`}
+                                                className="text-decoration-none"
+                                            >
+                                                {t.teacher}
+                                            </Link>
+                                        </td>
+                                        <td className="fw-semibold">
+                                            {freeCount}
+                                        </td>
+                                    </tr>
+                                );
+                            })}
+                        </tbody>
+                    </table>
                 </div>
             ) : (
                 <p className="fs-3 text-muted">
