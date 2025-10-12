@@ -10,6 +10,7 @@ export default function Teacher() {
     const { data, setData } = useContext(Context);
     const navigate = useNavigate();
     const [displayDays, setDisplayDays] = useState(true);
+    const [displayPlaces , setDisplayPlaces] = useState(true)
 
     const days = ["sun", "mon", "tus", "wed", "thr"];
     const totalSlots = 8;
@@ -174,6 +175,12 @@ export default function Teacher() {
                     })}
                 </div>
             )}
+            <button
+                className="btn btn-outline-primary mb-4 "
+                onClick={() => setDisplayPlaces(!displayPlaces)}
+            >
+                {displayPlaces ? "Hide Places row" : "Show Places row"}
+            </button>
 
             <div className="days_table">
                 <table className="table table-striped table-bordered table-hover align-middle text-center">
@@ -227,45 +234,50 @@ export default function Teacher() {
                                     </tr>
 
                                     {/* Places row */}
-                                    <tr>
-                                        <td className="text-muted">Places</td>
-                                        {[...Array(totalSlots)].map((_, i) => {
-                                            const slotNum = i + 1;
-                                            const isPlaceEnabled =
-                                                dayData.places?.includes(
-                                                    slotNum
-                                                );
-
-                                            return (
-                                                <td
-                                                    key={slotNum}
-                                                    className={`cursor-pointer ${
-                                                        isPlaceEnabled
-                                                            ? "bg-primary text-white"
-                                                            : "table-light"
-                                                    }`}
-                                                    onClick={() =>
-                                                        togglePlace(
-                                                            dayKey,
+                                    {displayPlaces && (
+                                        <tr>
+                                            <td className="text-muted">
+                                                Places
+                                            </td>
+                                            {[...Array(totalSlots)].map(
+                                                (_, i) => {
+                                                    const slotNum = i + 1;
+                                                    const isPlaceEnabled =
+                                                        dayData.places?.includes(
                                                             slotNum
-                                                        )
-                                                    }
-                                                    style={{
-                                                        userSelect: "none",
-                                                    }}
-                                                >
-                                                    P{slotNum}
-                                                </td>
-                                            );
-                                        })}
-                                    </tr>
+                                                        );
+
+                                                    return (
+                                                        <td
+                                                            key={slotNum}
+                                                            className={`cursor-pointer ${
+                                                                isPlaceEnabled
+                                                                    ? "bg-primary text-white"
+                                                                    : "table-light"
+                                                            }`}
+                                                            onClick={() =>
+                                                                togglePlace(
+                                                                    dayKey,
+                                                                    slotNum
+                                                                )
+                                                            }
+                                                            style={{
+                                                                userSelect:
+                                                                    "none",
+                                                            }}
+                                                        >
+                                                            P{slotNum}
+                                                        </td>
+                                                    );
+                                                }
+                                            )}
+                                        </tr>
+                                    )}
                                 </React.Fragment>
                             ))}
                     </tbody>
                 </table>
             </div>
-
-            
         </div>
     );
 }
