@@ -1,6 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { Context } from "../../contexts/Context/Context";
+import React from "react";
+
 
 export default function Teacher() {
     const { id } = useParams();
@@ -173,127 +175,97 @@ export default function Teacher() {
                 </div>
             )}
 
-            {/* Each Day Section — EXCLUDE absent days */}
-            {days.map((dayKey) => {
-                const dayData = teacher.days?.[dayKey] || {
-                    free_slots: [],
-                    places: [],
-                    exists: true,
-                };
-                if (!dayData.exists) return null;
-
-                const freeSlots = new Set(
-                    (dayData.free_slots || []).map((s) => Number(s))
-                );
-                const dayPlaces = new Set(
-                    (dayData.places || []).map((p) => Number(p))
-                );
-
-                return (
-                    <div key={dayKey} className="mb-5">
-                        <h4 className="mb-3 text-success">
-                            {dayKey.toUpperCase()}
-                        </h4>
-
-                        {/* Free Slots Table */}
-                        <div className="table-responsive mb-3">
-                            <table className="table table-bordered text-center align-middle">
-                                <thead className="table-secondary">
+            <div className="days_table">
+                <table className="table table-striped table-bordered table-hover align-middle text-center">
+                    <thead className="table-light">
+                        <tr>
+                            <th>Day</th>
+                            {[...Array(totalSlots)].map((_, i) => (
+                                <th key={i + 1}> {i + 1} </th>
+                            ))}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {Object.entries(teacher.days)
+                            .filter(([_, dayData]) => dayData.exists)
+                            .map(([dayKey, dayData]) => (
+                                <React.Fragment key={dayKey}>
+                                    {/* Day row */}
                                     <tr>
-                                        {Array.from(
-                                            { length: totalSlots },
-                                            (_, i) => (
-                                                <th key={i}>Slot {i + 1}</th>
-                                            )
-                                        )}
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        {Array.from(
-                                            { length: totalSlots },
-                                            (_, i) => {
-                                                const slotNum = i + 1;
-                                                const isFree =
-                                                    freeSlots.has(slotNum);
-                                                return (
-                                                    <td
-                                                        key={i}
-                                                        onClick={() =>
-                                                            toggleSlot(
-                                                                dayKey,
-                                                                slotNum
-                                                            )
-                                                        }
-                                                        style={{
-                                                            cursor: "pointer",
-                                                            backgroundColor:
-                                                                isFree
-                                                                    ? "green"
-                                                                    : "transparent",
-                                                            color: isFree
-                                                                ? "white"
-                                                                : "black",
-                                                            transition: "0.2s",
-                                                        }}
-                                                    >
-                                                        {isFree ? "Free" : ""}
-                                                    </td>
+                                        <td className="fw-bold text-capitalize">
+                                            {dayKey}
+                                        </td>
+                                        {[...Array(totalSlots)].map((_, i) => {
+                                            const slotNum = i + 1;
+                                            const isFree =
+                                                dayData.free_slots?.includes(
+                                                    slotNum
                                                 );
-                                            }
-                                        )}
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
 
-                        {/* Places Table */}
-                        <div className="table-responsive">
-                            <table className="table table-bordered text-center align-middle">
-                                <thead className="table-secondary">
-                                    <tr>
-                                        {allPlaces.map((place) => (
-                                            <th key={place}>Place {place}</th>
-                                        ))}
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        {allPlaces.map((place) => {
-                                            const hasPlace =
-                                                dayPlaces.has(place);
                                             return (
                                                 <td
-                                                    key={place}
+                                                    key={slotNum}
                                                     onClick={() =>
-                                                        togglePlace(
+                                                        toggleSlot(
                                                             dayKey,
-                                                            place
+                                                            slotNum
                                                         )
                                                     }
+                                                    className={`cursor-pointer ${
+                                                        isFree
+                                                            ? "bg-success"
+                                                            : "table-danger"
+                                                    }`}
                                                     style={{
-                                                        cursor: "pointer",
-                                                        backgroundColor:
-                                                            hasPlace
-                                                                ? "blue"
-                                                                : "transparent",
-                                                        color: hasPlace
-                                                            ? "white"
-                                                            : "black",
-                                                        transition: "0.2s",
+                                                        userSelect: "none",
                                                     }}
                                                 >
-                                                    {hasPlace ? "✔" : ""}
+                                                    {slotNum}
                                                 </td>
                                             );
                                         })}
                                     </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                );
-            })}
+
+                                    {/* Places row */}
+                                    <tr>
+                                        <td className="text-muted">Places</td>
+                                        {[...Array(totalSlots)].map((_, i) => {
+                                            const slotNum = i + 1;
+                                            const isPlaceEnabled =
+                                                dayData.places?.includes(
+                                                    slotNum
+                                                );
+
+                                            return (
+                                                <td
+                                                    key={slotNum}
+                                                    className={`cursor-pointer ${
+                                                        isPlaceEnabled
+                                                            ? "bg-primary text-white"
+                                                            : "table-light"
+                                                    }`}
+                                                    onClick={() =>
+                                                        togglePlace(
+                                                            dayKey,
+                                                            slotNum
+                                                        )
+                                                    }
+                                                    style={{
+                                                        userSelect: "none",
+                                                    }}
+                                                >
+                                                    P{slotNum}
+                                                </td>
+                                            );
+                                        })}
+                                    </tr>
+                                </React.Fragment>
+                            ))}
+                    </tbody>
+                </table>
+            </div>
+
+            
         </div>
     );
 }

@@ -52,7 +52,7 @@ export default function Nav() {
                                     Schedule
                                 </Link>
                             </li> */}
-                            {/* <li className="nav-item">
+                            <li className="nav-item">
                                 <Link
                                     className="nav-link active"
                                     aria-current="page"
@@ -60,7 +60,7 @@ export default function Nav() {
                                 >
                                     Slots
                                 </Link>
-                            </li> */}
+                            </li>
                         </ul>
                         {/* <form className="d-flex" role="search">
                             <input
