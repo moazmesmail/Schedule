@@ -35,7 +35,7 @@ export default function Slots() {
                     value={day}
                     onChange={(e) => setDay(e.target.value)}
                 >
-                    {["sun", "mon", "tue", "wed", "thr"].map((d, i) => (
+                    {["sun", "mon", "tus", "wed", "thr"].map((d, i) => (
                         <option key={d} value={d}>
                             {d}
                         </option>
