@@ -38,7 +38,6 @@ export default function Teacher() {
                 return { ...prevData, teachers };
             });
 
-
             return updated;
         });
     };
@@ -46,7 +45,7 @@ export default function Teacher() {
     // --- Initialize missing keys once ---
     useEffect(() => {
         const defaults = {
-            name: "",
+            teacher: "",
             religon: "",
             slots_per_week: 0,
             available_days: [],
@@ -126,7 +125,6 @@ export default function Teacher() {
 
             dayData.places = Array.from(placeSet).sort((a, b) => a - b);
             t.days = { ...t.days, [dayKey]: dayData };
-
         });
     };
 
@@ -142,7 +140,24 @@ export default function Teacher() {
     return (
         <div className="card mb-4 shadow-sm p-4 text-start">
             <h4 className="text-center mb-4 fw-bold text-primary">
-                🧑‍🏫 Edit Teacher Info
+                {teacher.teacher}
+                <div className="d-flex justify-content-between mt-4">
+                    <button
+                        type="button"
+                        className="btn btn-outline-secondary"
+                        onClick={prevTeacher}
+                    >
+                        ← Previous Teacher
+                    </button>
+
+                    <button
+                        type="button"
+                        className="btn btn-outline-secondary"
+                        onClick={nextTeacher}
+                    >
+                        Next Teacher →
+                    </button>
+                </div>
             </h4>
 
             <form className="row g-3">
@@ -156,7 +171,7 @@ export default function Teacher() {
                         placeholder="Enter teacher name"
                         onChange={(e) =>
                             updateTeacher((t) => {
-                                t.name = e.target.value;
+                                t.teacher = e.target.value;
                             })
                         }
                     />
@@ -227,7 +242,7 @@ export default function Teacher() {
                     <input
                         type="number"
                         min="15"
-                        value={teacher.slots_per_week || 18}
+                        value={teacher.slots_per_week}
                         className="form-control"
                         onChange={(e) =>
                             updateTeacher((t) => {
@@ -344,7 +359,7 @@ export default function Teacher() {
                             })
                         }
                     >
-                        ➕ Add Course
+                        ➕ Add Subject
                     </button>
 
                     <small className="text-muted ms-2">
@@ -364,7 +379,7 @@ export default function Teacher() {
                                 <th>Class</th>
                                 <th>Subject</th>
                                 <th>Hours / Week</th>
-                                <th></th>
+                                <th>Actions</th> {/* updated */}
                             </tr>
                         </thead>
                         <tbody>
@@ -460,7 +475,7 @@ export default function Teacher() {
                                             type="number"
                                             min="1"
                                             className="form-control"
-                                            value={entry.hours || 8}
+                                            value={entry.hours || 0}
                                             onChange={(e) =>
                                                 updateTeacher((t) => {
                                                     t.classes[index].hours =
@@ -472,11 +487,11 @@ export default function Teacher() {
                                         />
                                     </td>
 
-                                    {/* --- Remove button --- */}
-                                    <td style={{ width: "50px" }}>
+                                    {/* --- Actions: Remove + Duplicate --- */}
+                                    <td style={{ width: "100px" }}>
                                         <button
                                             type="button"
-                                            className="btn btn-sm btn-danger"
+                                            className="btn btn-sm btn-danger me-1"
                                             onClick={() =>
                                                 updateTeacher((t) => {
                                                     t.classes.splice(index, 1);
@@ -484,6 +499,55 @@ export default function Teacher() {
                                             }
                                         >
                                             ✕
+                                        </button>
+                                        <button
+                                            type="button"
+                                            className="btn btn-sm btn-secondary"
+                                            onClick={() => {
+                                                // Use functional update to avoid double effect
+                                                setTeacher((prev) => {
+                                                    const newClasses = [
+                                                        ...prev.classes,
+                                                    ];
+                                                    const duplicate =
+                                                        JSON.parse(
+                                                            JSON.stringify(
+                                                                newClasses[
+                                                                    index
+                                                                ]
+                                                            )
+                                                        );
+                                                    newClasses.splice(
+                                                        index + 1,
+                                                        0,
+                                                        duplicate
+                                                    );
+
+                                                    // Update global data at the same time
+                                                    setData((prevData) => {
+                                                        const teachers = [
+                                                            ...prevData.teachers,
+                                                        ];
+                                                        teachers[teacherIndex] =
+                                                            {
+                                                                ...prev,
+                                                                classes:
+                                                                    newClasses,
+                                                            };
+                                                        return {
+                                                            ...prevData,
+                                                            teachers,
+                                                        };
+                                                    });
+
+                                                    return {
+                                                        ...prev,
+                                                        classes: newClasses,
+                                                    };
+                                                });
+                                            }}
+                                        >
+                                            ⬇️
                                         </button>
                                     </td>
                                 </tr>
@@ -494,7 +558,7 @@ export default function Teacher() {
                     {/* --- Add new row --- */}
                     <button
                         type="button"
-                        className="btn btn-outline-primary btn-sm"
+                        className="btn btn-outline-primary btn-sm mt-2"
                         onClick={() =>
                             updateTeacher((t) => {
                                 t.classes = [

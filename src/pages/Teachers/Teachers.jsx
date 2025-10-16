@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { Context } from "../../contexts/Context/Context";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; 
 
 export default function Teachers() {
     const { data, setData } = useContext(Context);
     const days = ["Sun", "Mon", "Tus", "Wed", "Thr"];
+    const navigate = useNavigate();
 
     if (!data || !data.teachers.length)
         return (
@@ -15,12 +16,51 @@ export default function Teachers() {
 
     // Delete teacher handler
     const deleteTeacher = (index) => {
-        const updated = data['teachers'].filter((_, i) => i !== index);
-        setData(updated);
+        if (!data?.teachers) return;
+        const updatedTeachers = data.teachers.filter((_, i) => i !== index);
+        setData({ ...data, teachers: updatedTeachers });
+    };
+
+
+    // Add new teacher handler
+    const addTeacher = () => {
+        const newTeacher = {
+            teacher: "",
+            religon: "",
+            slots_per_week: 0,
+            available_days: [],
+            courses: [],
+            classes: [],
+            days: days.reduce(
+                (acc, d) => ({
+                    ...acc,
+                    [d.toLowerCase()]: {
+                        exists: true,
+                        free_slots: [],
+                        places: [],
+                    },
+                }),
+                {}
+            ),
+        };
+
+        const updatedTeachers = [...data.teachers, newTeacher];
+        setData({ ...data, teachers: updatedTeachers });
+
+        // navigate to the new teacher page
+        navigate(`/teacher/${updatedTeachers.length - 1}`);
     };
 
     return (
         <div className="container mt-4">
+            <div className="mb-3 text-center">
+                <button
+                    className="btn btn-outline-primary"
+                    onClick={addTeacher}
+                >
+                    ➕ New Teacher
+                </button>
+            </div>
             <h3 className="mb-3 text-center">Teachers Overview</h3>
             <div className="table-responsive">
                 <table className="table table-bordered table-striped table-hover align-middle">
@@ -33,7 +73,7 @@ export default function Teachers() {
                         </tr>
                     </thead>
                     <tbody>
-                        {data['teachers'].map((t, i) => {
+                        {data["teachers"].map((t, i) => {
                             const dayEntries = Object.entries(t.days || {});
                             const absentDays =
                                 dayEntries
