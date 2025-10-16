@@ -1,43 +1,47 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect } from "react";
+import { Context } from "../../contexts/Context/Context";
 
 export default function SubjectsTable() {
-    const [subjects, setSubjects] = useState([
-        { id: 1, name: "Math", stage: "primary" },
-        { id: 2, name: "Science", stage: "secondary" },
-    ]);
+    const { data, setData } = useContext(Context);
 
-    const [nextId, setNextId] = useState(3);
+    // Initialize subjects key if missing
+    useEffect(() => {
+        if (!data?.subjects) {
+            setData({ ...data, subjects: [] });
+        }
+    }, [data, setData]);
 
+    // If no data yet
+    if (!data || !data.subjects) {
+        return <p>Loading subjects data...</p>;
+    }
+
+    const subjects = data.subjects;
+
+    // Generate next ID dynamically
+    const nextId =
+        subjects.length > 0 ? Math.max(...subjects.map((s) => s.id)) + 1 : 1;
+
+    // --- Handlers ---
     const handleChange = (id, field, value) => {
-        setSubjects(
-            subjects.map((sub) =>
-                sub.id === id ? { ...sub, [field]: value } : sub
-            )
+        const updatedSubjects = subjects.map((sub) =>
+            sub.id === id ? { ...sub, [field]: value } : sub
         );
+        setData({ ...data, subjects: updatedSubjects });
     };
 
     const addSubject = () => {
-        setSubjects([...subjects, { id: nextId, name: "", stage: "primary" }]);
-        setNextId(nextId + 1);
+        const newSubject = { id: nextId, name: "", stage: "primary" };
+        setData({ ...data, subjects: [...subjects, newSubject] });
     };
 
     const deleteSubject = (id) => {
-        setSubjects(subjects.filter((sub) => sub.id !== id));
+        const updated = subjects.filter((sub) => sub.id !== id);
+        setData({ ...data, subjects: updated });
     };
 
-    const saveToFile = () => {
-        const json = JSON.stringify(subjects, null, 2);
-        const blob = new Blob([json], { type: "application/json" });
-        const url = URL.createObjectURL(blob);
 
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = "subjects.json";
-        link.click();
-
-        URL.revokeObjectURL(url);
-    };
-
+    // --- UI ---
     return (
         <div className="container mt-5">
             <h2 className="mb-4 text-center">Subjects Table</h2>
@@ -105,9 +109,6 @@ export default function SubjectsTable() {
                 <button className="btn btn-primary" onClick={addSubject}>
                     + Add Subject
                 </button>
-                {/* <button className="btn btn-success" onClick={saveToFile}>
-                    💾 Save as JSON
-                </button> */}
             </div>
         </div>
     );
