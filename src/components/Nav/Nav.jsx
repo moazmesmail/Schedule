@@ -1,6 +1,32 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../../contexts/Context/Context";
 
 export default function Nav() {
+
+    const { data } = useContext(Context);
+
+    const handleSave = () => {
+        if (!data) {
+            alert("No data to save!");
+            return;
+        }
+
+        const blob = new Blob([JSON.stringify(data, null, 2)], {
+            type: "application/json",
+        });
+        const now = new Date();
+        const localTime = now.toLocaleString("sv-SE").replace(/[: ]/g, "-");
+        const filename = `data_${localTime}.json`;
+
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = filename;
+        link.click();
+        URL.revokeObjectURL(url);
+    };
+
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -80,6 +106,14 @@ export default function Nav() {
                                 </Link>
                             </li>
                         </ul>
+                        {/* 💾 Save button on right side */}
+                        <button
+                            className="btn btn-success ms-auto"
+                            onClick={handleSave}
+                            disabled={!data}
+                        >
+                            💾 Save
+                        </button>
                         {/* <form className="d-flex" role="search">
                             <input
                                 className="form-control me-2"
