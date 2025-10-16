@@ -61,6 +61,15 @@ export default function Nav() {
                                     Slots
                                 </Link>
                             </li>
+                            <li className="nav-item">
+                                <Link
+                                    className="nav-link active"
+                                    aria-current="page"
+                                    to="/subjects"
+                                >
+                                    Subjects
+                                </Link>
+                            </li>
                         </ul>
                         {/* <form className="d-flex" role="search">
                             <input

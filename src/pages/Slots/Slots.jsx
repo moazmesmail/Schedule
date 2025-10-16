@@ -7,10 +7,10 @@ export default function Slots() {
     const [day, setDay] = useState("sun");
     const [slot, setSlot] = useState(1);
 
-    if (!data || !data.length) return <p>No data available</p>;
+    if (!data || !data.teachers.length) return <p>No data available</p>;
 
     // Filter + sort teachers alphabetically
-    const freeTeachers = data
+    const freeTeachers = data['teachers']
         .filter(
             (teacher) =>
                 teacher.days?.[day]?.exists &&
@@ -70,7 +70,7 @@ export default function Slots() {
                             {freeTeachers.map((t, _) => {
                                 const freeCount =
                                     t.days?.[day]?.free_slots?.length || 0;
-                                const teacherIndex = data.findIndex(
+                                const teacherIndex = data['teachers'].findIndex(
                                     (x) => x.teacher === t.teacher
                                 );
                                 return (

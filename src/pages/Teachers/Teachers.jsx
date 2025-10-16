@@ -6,7 +6,7 @@ export default function Teachers() {
     const { data, setData } = useContext(Context);
     const days = ["Sun", "Mon", "Tus", "Wed", "Thr"];
 
-    if (!data || !data.length)
+    if (!data || !data.teachers.length)
         return (
             <p className="text-center text-muted mt-3">
                 No teacher data available.
@@ -15,7 +15,7 @@ export default function Teachers() {
 
     // Delete teacher handler
     const deleteTeacher = (index) => {
-        const updated = data.filter((_, i) => i !== index);
+        const updated = data['teachers'].filter((_, i) => i !== index);
         setData(updated);
     };
 
@@ -33,7 +33,7 @@ export default function Teachers() {
                         </tr>
                     </thead>
                     <tbody>
-                        {data.map((t, i) => {
+                        {data['teachers'].map((t, i) => {
                             const dayEntries = Object.entries(t.days || {});
                             const absentDays =
                                 dayEntries

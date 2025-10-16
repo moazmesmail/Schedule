@@ -16,8 +16,8 @@ export default function Teacher() {
     const totalSlots = 8;
     const allPlaces = [1, 2, 3, 4, 5, 6, 7];
 
-    if (!data || !data.length) return <p>No data loaded yet.</p>;
-    const teacher = data[teacherIndex];
+    if (!data || !data.teachers.length) return <p>No data loaded yet.</p>;
+    const teacher = data['teachers'][teacherIndex];
     if (!teacher) return <p>Teacher not found.</p>;
 
     const absentDays = Object.entries(teacher.days || {})
@@ -27,7 +27,8 @@ export default function Teacher() {
     // --- Toggle day existence ---
     const toggleDay = (dayKey) => {
         const updatedData = [...data];
-        const t = { ...updatedData[teacherIndex] };
+        const updatedTeachers = [...updatedData.teachers];
+        const t = { ...updatedTeachers[teacherIndex] };
 
         // Initialize days object if it doesn't exist
         if (!t.days) {
@@ -51,7 +52,8 @@ export default function Teacher() {
     // --- Toggle slot ---
     const toggleSlot = (dayKey, slotNum) => {
         const updatedData = [...data];
-        const t = { ...updatedData[teacherIndex] };
+        const updatedTeachers = [...updatedData.teachers];
+        const t = { ...updatedTeachers[teacherIndex] };
 
         // Initialize days object if it doesn't exist
         if (!t.days) {
@@ -87,7 +89,8 @@ export default function Teacher() {
     // --- Toggle place ---
     const togglePlace = (dayKey, placeCode) => {
         const updatedData = [...data];
-        const t = { ...updatedData[teacherIndex] };
+        const updatedTeachers = [...updatedData.teachers];
+        const t = { ...updatedTeachers[teacherIndex] };
 
         // Initialize days object if it doesn't exist
         if (!t.days) {
@@ -120,9 +123,9 @@ export default function Teacher() {
 
     // --- Navigation ---
     const nextTeacher = () =>
-        navigate(`/teacher/${(teacherIndex + 1) % data.length}`);
+        navigate(`/teacher/${(teacherIndex + 1) % data['teachers'].length}`);
     const prevTeacher = () =>
-        navigate(`/teacher/${(teacherIndex - 1 + data.length) % data.length}`);
+        navigate(`/teacher/${(teacherIndex - 1 + data['teachers'].length) % data['teachers'].length}`);
 
     return (
         <div className="container mt-4 text-center">

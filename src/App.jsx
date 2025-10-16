@@ -10,6 +10,7 @@ import Teachers from "./pages/Teachers/Teachers.jsx";
 import Teacher from "./pages/Teacher/Teacher.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useContext } from "react";
+import SubjectsTable from "./pages/Subjects/subjects.jsx";
 
 function AppContent() {
     const { data, setData } = useContext(Context);
@@ -41,6 +42,7 @@ function AppContent() {
                     <Route path="/slots" element={<Slots />} />
                     <Route path="/teachers" element={<Teachers />} />
                     <Route path="/teacher/:id" element={<Teacher />} />
+                    <Route path="/subjects" element={<SubjectsTable />}/>
                 </Routes>
             </div>
         </Router>
